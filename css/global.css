@@ -1,142 +1,304 @@
 /* Default encoding */
+
 @charset "utf-8";
 
+/*------------------------------------------------------------------------*/
+
+
 /* Fonts */
+
 @font-face {
-	font-family: 'Open Sans';
-	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
+    font-family: 'Open Sans';
+    src: url(../fonts/open-sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
-	font-family: 'Open Sans Bold';
-	src: url(../fonts/open-sans/OpenSans-Bold.ttf);
+    font-family: 'Open Sans Bold';
+    src: url(../fonts/open-sans/OpenSans-Bold.ttf);
 }
+
+
+/*------------------------------------------------------------------------*/
+
 
 /* SIMPLE CSS RESET */
+
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+/*------------------------------------------------------------------------*/
+
 
 /* BODY */
+
 body {
-	font: 1rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
-	color: #1B022A;
-	text-align: center;
+    font: 1rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
+    color: #1B022A;
 }
 
-/* Container */
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:SUPPORT */
+
 .container {
-	width: 80%;
-	margin: auto;
-	overflow: hidden;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-/* Clear Fix */
 .clear-fix:after {
-	display: block;
-	content: "";
-	clear: both;
+    display: block;
+    content: "";
+    clear: both;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
 }
 
-/* HEADER */
+.left {
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.right {
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.center {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-justify {
+    text-align: justify;
+}
+
+
+/* END:SUPPORT */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:HEADER */
+
 header {
-	background-image: url(../img/loremblack120x600.gif);
-	background-attachment: fixed;
-	/* background-repeat: no-repeat; */
-	/* background-size: cover; */
-	max-height: 37.5rem;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
 }
 
-/* NAV */
-nav {
-	padding: 0.9375rem 0;
-	max-height: 6.5625rem;
+.overlay {
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* LOGO */
-.logo {
-	float: left;
-}
 
-.logo img{
-	width: 7rem;
-	height: 3.5rem;
-	display: block;
-}
+/* END:HEADER */
 
-/* NAVBAR */
-.navbar-links {
-	float: right;
-	list-style-type: none;
-}
 
-.navbar-links li {
-	display: inline-block;
-	padding: 1.6rem .7rem;
-}
+/*------------------------------------------------------------------------*/
 
-.navbar-links a {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #FFFFFF;
-	padding: 0 .3rem;
-}
 
-nav a:hover {
-	background: #7D2BAD;
-	border-radius: 0.1875rem;
-}
+/* BEGIN:JUMBOTRON */
 
-/* JUMBOTRON */
 .jumbotron {
-	text-align: center;
-	padding: 6.2rem 0 14.2rem 0;
-	color: #FFFFFF;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    position: relative;
+    top: 200px;
 }
 
 .jumbotron-heading {
-	font: 4rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
-
+    font: 3rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
 }
 
 .jumbotron-text {
-	font: 3rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
+    font: 2rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
 }
 
-/* FOOTER */
+
+/* END:JUMBOTRON */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:NAVBAR */
+
+.navbar ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.navbar ul li {
+    float: left;
+    padding: 0;
+}
+
+.scrolling ul li a {
+    padding: 8px 15px !important;
+}
+
+.scrolling {
+    background: #6c2596;
+    border: 0;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    line-height: 40px !important;
+    min-height: 40px !important;
+}
+
+.fixed-top {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    top: 0px;
+    border-width: 0 0 1px;
+    border-radius: 0;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+
+.navbar {
+    color: white;
+    z-index: 3;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar {
+    line-height: 60px;
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 20px;
+}
+
+.navbar ul li a {
+    font-size: 1em;
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 15px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #00accd;
+}
+
+.container-nav {
+    margin: 0% 10% 0% 10%;
+}
+
+.navbar .brand-logo img {
+    height: 60px;
+    transition: all 300ms ease-in-out;
+}
+
+.scrolling .brand-logo img {
+    height: 45px !important;
+    padding-top: 3px;
+}
+
+
+/* END:NAVBAR */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:FOOTER */
+
 footer {
-	background-color: #1B022A;
-	color: #FFFFFF;
-	min-height: 6.5625rem;
-	max-height: 6.5625rem;
-	padding: 0.9375rem 0;
+    background-color: #1B022A;
+    color: #FFFFFF;
+    min-height: 6.5625rem;
+    max-height: 6.5625rem;
+    padding: 0.9375rem 0;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .copyright {
-	float: left;
-	padding: 1.6rem 0;
+    padding: 1.6rem 0;
+    text-align: center;
+    display: inline-block;
 }
 
 .w3c-banner {
-	float: right;
-	max-height: 4.6875rem;
-	line-height: 1;
+    float: right;
+    max-height: 4.6875rem;
+    line-height: 1;
 }
 
 .w3c-banner img {
-	display: block;
-	margin: auto;
-	width: 3.6875rem;
-	padding: .25rem .5rem .5rem;
+    display: block;
+    margin: auto;
+    width: 3.6875rem;
+    padding: .25rem .5rem .5rem;
 }
 
 .w3c-banner a {
-	color: #FFFFFF;
-	text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none;
 }
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 125px;
+    display: block;
+}
+
+
+/* END:FOOTER */
+
+
+/*------------------------------------------------------------------------*/
