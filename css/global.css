@@ -40,8 +40,14 @@ body {
 	clear: both;
 }
 
+/* Uppercase headings */
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
+}
+
+/* Internal spacing for sections */
+article section {
+	padding: 1.5rem 0;
 }
 
 /* HEADER */
