@@ -43,6 +43,7 @@ body {
 /* Uppercase headings */
 h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
 
 /* Internal spacing for sections */
@@ -108,7 +109,7 @@ nav a:hover {
 
 .jumbotron-heading {
 	font: 4rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
-
+	margin: 0;
 }
 
 .jumbotron-text {
