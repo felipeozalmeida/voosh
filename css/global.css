@@ -29,7 +29,7 @@ body {
 /* Container */
 .container {
 	width: 80%;
-	margin: auto;
+	margin: 0 auto;
 	overflow: hidden;
 }
 
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Internal spacing for sections */
-article section {
+article > section {
 	padding: 1.5rem 0;
 }
 
