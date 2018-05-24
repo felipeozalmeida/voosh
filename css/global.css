@@ -1,6 +1,7 @@
 /* Default encoding */
 
 @charset "utf-8";
+@import url("animate.css");
 
 /*------------------------------------------------------------------------*/
 
@@ -44,12 +45,38 @@ body {
 /*------------------------------------------------------------------------*/
 
 
+/* BEGIN:STYLES */
+
+.button-glass {
+    width: 300px;
+    text-transform: uppercase;
+    height: 75px;
+    border: 2px solid black;
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.button-glass:hover {
+    cursor: pointer;
+    border: 2px solid purple;
+    color: purple;
+}
+
+
+/* END:STYLES */
+
+
+/*------------------------------------------------------------------------*/
+
+
 /* BEGIN:SUPPORT */
 
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
+    position: relative;
 }
 
 .clear-fix:after {
@@ -65,6 +92,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
+    margin-bottom: 1rem;
 }
 
 .left {
@@ -102,6 +130,19 @@ h6 {
 
 .align-justify {
     text-align: justify;
+}
+
+.white-text {
+    color: white;
+}
+
+article>section {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.graylight-bg {
+    background: #e5e5e5;
 }
 
 
@@ -181,7 +222,7 @@ header {
 }
 
 .scrolling {
-    background: #6c2596;
+    background: #1B022A;
     border: 0;
     padding-top: 5px !important;
     padding-bottom: 5px !important;
@@ -203,7 +244,7 @@ header {
 
 .navbar {
     color: white;
-    z-index: 3;
+    z-index: 10;
     transition: all 300ms ease-in-out;
 }
 
