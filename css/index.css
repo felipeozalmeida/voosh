@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+  --purple: #1B022A;
+  --white: #FFFFFF;
+}
+
+.technologies {
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+.technologies li {
+  display: inline-block;
+  padding: 1rem 0;
+  vertical-align: top;
+  width: 200px;
+}
+
+.technologies img {
+  display: block;
+  margin: 0 auto 1rem;
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+}
+
+.technologies p {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--purple);
+  background: var(--white);
+  color: var(--purple);
+}
+
+.btn:hover {
+  background: var(--purple);
+  color: var(--white);
+}
