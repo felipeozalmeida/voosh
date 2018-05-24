@@ -1,6 +1,5 @@
 /* Default encoding */
 
-@charset "utf-8";
 @import url("animate.css");
 
 /*------------------------------------------------------------------------*/
@@ -142,7 +141,7 @@ article>section {
 }
 
 .graylight-bg {
-    background: #e5e5e5;
+    background: #f2f2f2;
 }
 
 
@@ -302,7 +301,6 @@ footer {
     bottom: 0;
     left: 0;
     text-align: center;
-    margin-top: 2rem;
 }
 
 .copyright {
