@@ -5,6 +5,10 @@ body {
   --white: #FFFFFF;
 }
 
+article > section:nth-child(even) {
+  background: #F4F4F4;
+}
+
 .technologies {
   margin-bottom: 1rem;
   padding: 1rem 0;
