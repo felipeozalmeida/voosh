@@ -116,23 +116,18 @@ body {
 
 .left {
 	float: left;
-	margin-left: 0;
-	margin-right: 10px;
-	margin-bottom: 5px;
+	margin: 0 10px 5px 0;
 }
 
 .right {
 	float: right;
-	margin-right: 0;
-	margin-left: 10px;
-	margin-bottom: 5px;
+	margin: 0 0 5px 10px;
 }
 
 .center {
 	float: none;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .align-center {
@@ -162,6 +157,10 @@ h4,
 h5,
 h6 {
 	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+p {
 	margin-bottom: 1rem;
 }
 
@@ -217,10 +216,12 @@ header {
 
 .jumbotron-heading {
 	font: 3rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
+	margin: 0;
 }
 
 .jumbotron-text {
 	font: 2rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
+	margin: 0;
 }
 
 
@@ -237,8 +238,7 @@ header {
 }
 
 .fixed-top {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 15px 0;
 	top: 0px;
 	border-width: 0 0 1px;
 	border-radius: 0;
@@ -291,8 +291,7 @@ header {
 .scrolling {
 	background: var(--purple);
 	border: 0;
-	padding-top: 5px !important;
-	padding-bottom: 5px !important;
+	padding: 5px 0 !important;
 	line-height: 40px !important;
 	min-height: 40px !important;
 }
