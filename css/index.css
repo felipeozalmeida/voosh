@@ -1,104 +1,7 @@
-/* SHOULD BE GLOBAL? */
-
-@charset "UTF-8";
-
-body {
-  --purple: #1B022A;
-  --white: #FFFFFF;
-}
-
-article > section {
-  padding: 1.5rem 0;
-}
-
-article > section:nth-child(even) {
-  background: #F4F4F4;
-}
-
-.btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  border: 1px solid var(--purple);
-  border-radius: 3px;
-  background: var(--white);
-  color: var(--purple);
-  transition: background-color 180ms, color 180ms;
-}
-
-.btn:hover {
-  background: var(--purple);
-  color: var(--white);
-}
-
-/* end */
-
-.recent-projects .project img {
-    width: 250px;
-    height: 250px;
-}
-
-.recent-projects .project {
-    display: inline-block;
-    margin: 28px;
-}
-
-.what-saying img {
-    width: 100px;
-    border-radius: 50%;
-}
-
-.what-saying {
-    position: relative;
-}
-
-.what-saying .card-comment .client-info {
-    display: inline-block;
-    position: absolute;
-    margin: 18px 6px;
-}
-
-.what-saying .card-comment {
-    background: white;
-    display: inline-block;
-    width: 24%;
-    padding: 1% .5%;
-    margin: 3px;
-    border-radius: 10px;
-    border: 1px solid #bbb;
-}
-
-.what-saying .card-comment:hover {
-    box-shadow: .5px .5px 1.25px 1.5px #ccc;
-}
-
-.what-saying .card-comment .client-info p {
-    font-size: 14px;
-}
-
-.what-saying .card-comment .client-comment {
-    padding: 3%;
-}
-
-.what-saying .container {
-    z-index: 3;
-}
-
-.overlay-box {
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-}
-
-/* OUR TOOLKIT */
+/* BEGIN: OUR TOOLKIT */
 
 .technologies {
-  list-style-type: none;
+	list-style-type: none;
 }
 
 .technologies li {
@@ -107,17 +10,85 @@ article > section:nth-child(even) {
   vertical-align: top;
   width: 200px;
 }
-
+  
 .technologies img {
-  display: block;
-  margin: 0 auto 1rem;
-  border-radius: 50%;
-  width: 125px;
-  height: 125px;
+	display: block;
+	margin: 0 auto 1rem;
+	border-radius: 50%;
+	width: 125px;
+	height: 125px;
 }
-
+  
 .technologies p {
-  margin: 0;
+	margin: 0;
+}
+  
+/* END: OUR TOOLKIT */  
+
+/* BEGIN: RECENT PROJECTS */
+
+.recent-projects .project img {
+	width: 250px;
+	height: 250px;
 }
 
-/* end */
+.recent-projects .project {
+	display: inline-block;
+	margin: 28px;
+}
+
+/* END: RECENT PROJECTS */
+
+/* BEGIN: WHAT THEY'RE SAYING */
+
+.what-saying img {
+	width: 100px;
+	border-radius: 50%;
+}
+
+.what-saying {
+	position: relative;
+}
+
+.what-saying .card-comment .client-info {
+	display: inline-block;
+	position: absolute;
+	margin: 18px 6px;
+}
+
+.what-saying .card-comment {
+	background: white;
+	display: inline-block;
+	width: 24%;
+	padding: 1% .5%;
+	margin: 3px;
+	border-radius: 10px;
+	border: 1px solid #bbb;
+}
+
+.what-saying .card-comment:hover {
+	box-shadow: .5px .5px 1.25px 1.5px #ccc;
+}
+
+.what-saying .card-comment .client-info p {
+	font-size: 14px;
+}
+
+.what-saying .card-comment .client-comment {
+	padding: 3%;
+}
+
+.what-saying .container {
+	z-index: 3;
+}
+
+/* END: WHAT THEY'RE SAYING */
+
+.overlay-box {
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
