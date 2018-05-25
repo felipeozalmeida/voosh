@@ -1,3 +1,5 @@
+/* SHOULD BE GLOBAL? */
+
 @charset "UTF-8";
 
 body {
@@ -5,13 +7,37 @@ body {
   --white: #FFFFFF;
 }
 
+article > section {
+  padding: 1.5rem 0 .5rem 0;
+}
+
 article > section:nth-child(even) {
   background: #F4F4F4;
 }
 
-.technologies {
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
   margin-bottom: 1rem;
-  padding: 1rem 0;
+  border: 1px solid var(--purple);
+  border-radius: 3px;
+  background: var(--white);
+  color: var(--purple);
+  transition: background-color 180ms, color 180ms;
+}
+
+.btn:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+/* end */
+
+/* OUR TOOLKIT */
+
+.technologies {
   list-style-type: none;
 }
 
@@ -34,18 +60,4 @@ article > section:nth-child(even) {
   margin: 0;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: 1px solid var(--purple);
-  background: var(--white);
-  color: var(--purple);
-}
-
-.btn:hover {
-  background: var(--purple);
-  color: var(--white);
-}
+/* end */
