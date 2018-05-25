@@ -1,7 +1,18 @@
-/* Default encoding */
-@charset "utf-8";
+/*------------------------------------------------------------------------*/
 
-/* Fonts */
+/* DEFAULT ENCODING */
+
+@charset "UTF-8";
+
+/* IMPORTS */
+
+@import url("animate.css");
+
+/*------------------------------------------------------------------------*/
+
+
+/* FONTS */
+
 @font-face {
 	font-family: 'Open Sans';
 	src: url(../fonts/open-sans/OpenSans-Regular.ttf);
@@ -12,122 +23,302 @@
 	src: url(../fonts/open-sans/OpenSans-Bold.ttf);
 }
 
+/* COLORS */
+
+:root {
+  --purple: #1B022A;
+	--white: #FFFFFF;
+	--black: #000000;
+	--snow: #CDCDCD;
+	--blue: #00ACCD;
+	--softblack: rgba(0, 0, 0, 0.6);
+	--softwhite: #F4F4F4;
+}
+
 /* SIMPLE CSS RESET */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
+
+/*------------------------------------------------------------------------*/
+
+
 /* BODY */
+
 body {
 	font: 1rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
-	color: #1B022A;
-	text-align: center;
+	color: var(--purple);
 }
 
-/* Container */
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:STYLES */
+
+.button-glass {
+	width: 300px;
+	text-transform: uppercase;
+	height: 75px;
+	border: 2px solid var(--black);
+	background: transparent;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.button-glass:hover {
+	cursor: pointer;
+	border: 2px solid var(--purple);
+	color: var(--purple);
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--purple);
+  border-radius: 3px;
+  background: var(--white);
+  color: var(--purple);
+  transition: background-color 180ms, color 180ms;
+}
+
+.btn:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+/* END:STYLES */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:SUPPORT */
+
 .container {
 	width: 80%;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
-/* Clear Fix */
 .clear-fix:after {
 	display: block;
 	content: "";
 	clear: both;
 }
 
-/* Uppercase headings */
-h1, h2, h3, h4, h5, h6 {
+.left {
+	float: left;
+	margin: 0 10px 5px 0;
+}
+
+.right {
+	float: right;
+	margin: 0 0 5px 10px;
+}
+
+.center {
+	float: none;
+	display: block;
+	margin: 0 auto;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.align-justify {
+	text-align: justify;
+}
+
+.white-text {
+	color: var(--white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-transform: uppercase;
 	margin-bottom: 1rem;
 }
 
-/* Margin for paragraphs */
 p {
 	margin-bottom: 1rem;
 }
 
-/* Internal spacing for sections */
 article > section {
 	padding: 1.5rem 0;
+	border-bottom: 1px solid var(--snow);
 }
 
-/* HEADER */
+article > section:nth-child(even) {
+	background: var(--softwhite);
+}
+
+/* END:SUPPORT */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:HEADER */
+
 header {
-	background-image: url(../img/loremblack120x600.gif);
+	background-image: url(../img/banner.jpg);
 	background-attachment: fixed;
-	/* background-repeat: no-repeat; */
-	/* background-size: cover; */
-	min-height: 37.5rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
 }
 
-/* NAV */
-nav {
-	padding: 0.9375rem 0;
-	min-height: 6.5625rem;
+.overlay {
+	width: 100%;
+	height: 500px;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	background-color: var(--softblack);
 }
 
-/* LOGO */
-.logo {
-	float: left;
-}
+/* END:HEADER */
 
-.logo img{
-	width: 7rem;
-	height: 3.5rem;
-	display: block;
-}
 
-/* NAVBAR */
-.navbar-links {
-	float: right;
-	list-style-type: none;
-}
+/*------------------------------------------------------------------------*/
 
-.navbar-links li {
-	display: inline-block;
-	padding: 1.6rem .7rem;
-}
 
-.navbar-links a {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #FFFFFF;
-	padding: 0 .3rem;
-}
+/* BEGIN:JUMBOTRON */
 
-nav a:hover {
-	background: #7D2BAD;
-	border-radius: 0.1875rem;
-}
-
-/* JUMBOTRON */
 .jumbotron {
 	text-align: center;
-	padding: 6.2rem 0 14.2rem 0;
-	color: #FFFFFF;
+	color: var(--white);
+	z-index: 2;
+	position: relative;
+	top: 200px;
 }
 
 .jumbotron-heading {
-	font: 4rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
+	font: 3rem/1.5 'Open Sans Bold', Helvetica, arial, sans-serif;
 	margin: 0;
 }
 
 .jumbotron-text {
-	font: 3rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
+	font: 2rem/1.5 'Open Sans', Helvetica, arial, sans-serif;
 	margin: 0;
 }
 
-/* FOOTER */
+
+/* END:JUMBOTRON */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:NAVBAR */
+
+.container-nav {
+	margin: 0% 10% 0% 10%;
+}
+
+.fixed-top {
+	padding: 15px 0;
+	top: 0px;
+	border-width: 0 0 1px;
+	border-radius: 0;
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	z-index: 1000;
+}
+
+.navbar {
+	color: var(--white);
+	z-index: 10;
+	transition: all 300ms ease-in-out;
+	line-height: 60px;
+	width: 100%;
+	min-height: 60px;
+	margin-bottom: 20px;
+}
+
+.navbar ul {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+	float: right;
+}
+
+.navbar ul li {
+	float: left;
+	padding: 0;
+}
+
+.navbar ul li a {
+	font-size: 1em;
+	display: block;
+	color: var(--white);
+	text-transform: uppercase;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+.navbar ul li a:hover {
+	color: var(--blue);
+}
+
+.navbar .brand-logo img {
+	height: 60px;
+	transition: all 300ms ease-in-out;
+}
+
+.scrolling {
+	background: var(--purple);
+	border: 0;
+	padding: 5px 0 !important;
+	line-height: 40px !important;
+	min-height: 40px !important;
+}
+
+.scrolling ul li a {
+	padding: 8px 15px !important;
+}
+
+.scrolling .brand-logo img {
+	height: 45px !important;
+	padding-top: 3px;
+}
+
+/* END:NAVBAR */
+
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN:FOOTER */
+
 footer {
-	background-color: #1B022A;
-	color: #FFFFFF;
+	background-color: var(--purple);
+	color: var(--white);
 	min-height: 6.5625rem;
 	padding: 0.9375rem 0;
+	text-align: center;
 }
 
 footer p {
@@ -135,8 +326,9 @@ footer p {
 }
 
 .copyright {
-	float: left;
 	padding: 1.6rem 0;
+	text-align: center;
+	display: inline-block;
 }
 
 .w3c-banner {
@@ -153,6 +345,21 @@ footer p {
 }
 
 .w3c-banner a {
-	color: #FFFFFF;
+	color: var(--white);
 	text-decoration: none;
 }
+
+.logo {
+	float: left;
+}
+
+.logo img {
+	width: 125px;
+	display: block;
+}
+
+
+/* END:FOOTER */
+
+
+/*------------------------------------------------------------------------*/
