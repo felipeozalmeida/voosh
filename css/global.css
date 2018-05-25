@@ -72,10 +72,9 @@ body {
 /* BEGIN:SUPPORT */
 
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .clear-fix:after {
@@ -301,6 +300,10 @@ footer {
     bottom: 0;
     left: 0;
     text-align: center;
+}
+
+footer p {
+	margin: 0;
 }
 
 .copyright {
