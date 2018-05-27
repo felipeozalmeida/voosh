@@ -4,6 +4,9 @@
 <head>
     <title>Voosh Web Design | Home</title>
 
+    <!-- Encoding -->
+    <meta charset="UTF-8">
+
     <!-- External files -->
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -38,10 +41,9 @@
             <h1 class="jumbotron-heading">Page title</h1>
             <p class="jumbotron-text">Page subtitle</p>
         </section>
-        <section class="overlay"></section>
     </header>
     <article>
-        <section class="recent-projects graylight-bg">
+        <section class="recent-projects">
             <section class="container align-center">
                 <h2>recent projects</h2>
                 <section class="project">
@@ -59,49 +61,78 @@
         <section class="what-saying">
             <section class="container">
                 <h2 class="align-center">what they're saying</h2>
-                <section class="card-comment">
-                    <img src="./img/client.gif" alt="">
-                    <section class="client-info">
-                        <b>John Doe</b>
-                        <p>Product Manager</p>
-                        <p>Acme Industries</p>
+                <section class="card">
+                    <section class="card-header">
+                        <section class="card-img">
+                            <img src="./img/john.png" alt="" class="left">
+                        </section>
+                        <section class="card-info">
+                            <p><strong>John Doe</strong></p>
+                            <p>Product Manager</p>
+                            <p>Acme Industries</p>
+                        </section>
                     </section>
-                    <p class="align-justify client-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna eu nunc vehicula tempor vulputate ut sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum laoreet aliquet
-                        turpis, a eleifend orci fringilla vel. Sed quis dolor ligula. Pellentesque est risus, suscipit vitae ligula a, ultrices sagittis erat. Ut non purus magna. Fusce sed pulvinar diam. Sed at imperdiet velit, at elementum magna. Sed
-                        aliquam neque ipsum, a scelerisque lacus malesuada et.</p>
+                    <section class="card-comment">
+                        <p class="align-justify">
+                            Curabitur aliquam blandit vulputate. Suspendisse facilisis leo sit amet ante congue pulvinar. Duis dictum pretium enim, nec blandit nisl ultricies ac. Nullam viverra euismod dapibus. Nunc rutrum pulvinar ante, vel congue mauris iaculis et. Aenean massa
+                            turpis, congue et augue a, mattis cursus orci. Cras vitae aliquam mauris, eu tincidunt mi. Duis mattis maximus magna at semper. Cras ut augue.
+                        </p>
+                    </section>
                 </section>
-                <section class="card-comment">
-                    <img src="./img/client.gif" alt="">
-                    <section class="client-info">
-                        <b>Carlton Hughes</b>
-                        <p>Sales Manager</p>
-                        <p>Burston Technologies</p>
+                <section class="card">
+                    <section class="card-header">
+                        <section class="card-img">
+                            <img src="./img/carlton.png" alt="" class="left">
+                        </section>
+                        <section class="card-info">
+                            <p><strong>Carlton Hughes</strong></p>
+                            <p>Sales Manager</p>
+                            <p>Burston Technologies</p>
+                        </section>
                     </section>
-                    <p class="align-justify client-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna eu nunc vehicula tempor vulputate ut sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum laoreet aliquet
-                        turpis, a eleifend orci fringilla vel. Sed quis dolor ligula. Pellentesque est risus, suscipit vitae ligula a, ultrices sagittis erat. Ut non purus magna. Fusce sed pulvinar diam. Sed at imperdiet velit, at elementum magna. Sed
-                        aliquam neque ipsum, a scelerisque lacus malesuada et.</p>
+                    <section class="card-comment">
+                        <p class="align-justify">
+                            Proin sed nunc mollis leo pretium posuere. Nam ut pharetra est, vitae dapibus dolor. Etiam ac sapien aliquam, dignissim urna ut, gravida enim. Nullam facilisis condimentum urna, at vehicula urna accumsan ac. Donec lacus ex, efficitur facilisis eros vitae,
+                            varius accumsan mauris. Sed feugiat, felis vitae lobortis ornare, nibh lacus condimentum nisi, et dignissim nisl dolor quis dolor. Fusce in volutpat eros. Curabitur ornare ipsum sit amet sem lobortis, sit amet mattis lorem
+                            ultrices. Ut.
+                        </p>
+                    </section>
                 </section>
-                <section class="card-comment">
-                    <img src="./img/client.gif" alt="">
-                    <section class="client-info">
-                        <b>Selena Thompson</b>
-                        <p>CTO</p>
-                        <p>Bonosoft Corporation</p>
+                <section class="card">
+                    <section class="card-header">
+                        <section class="card-img">
+                            <img src="./img/selena.png" alt="" class="left">
+                        </section>
+                        <section class="card-info">
+                            <p><strong>Selena Thompson</strong></p>
+                            <p>CTO</p>
+                            <p>Bonosoft Corporation</p>
+                        </section>
                     </section>
-                    <p class="align-justify client-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna eu nunc vehicula tempor vulputate ut sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum laoreet aliquet
-                        turpis, a eleifend orci fringilla vel. Sed quis dolor ligula. Pellentesque est risus, suscipit vitae ligula a, ultrices sagittis erat. Ut non purus magna. Fusce sed pulvinar diam. Sed at imperdiet velit, at elementum magna. Sed
-                        aliquam neque ipsum, a scelerisque lacus malesuada et.</p>
+                    <section class="card-comment">
+                        <p class="align-justify">
+                            Aenean molestie efficitur augue, vel porta nulla efficitur et. Ut augue elit, ultricies in convallis id, ultrices eu libero. Maecenas vitae nisl tellus. Vivamus ipsum odio, aliquet et leo in, faucibus vulputate turpis. Vivamus ac nibh eget augue rhoncus
+                            scelerisque quis in dui. Sed non mattis erat, ac consequat arcu. Nulla porta, mauris nec ullamcorper venenatis, tortor ligula volutpat leo, at aliquam orci orci sit amet dolor. Curabitur velit metus.
+                        </p>
+                    </section>
                 </section>
-                <section class="card-comment">
-                    <img src="./img/client.gif" alt="">
-                    <section class="client-info">
-                        <b>Kerry Bach</b>
-                        <p>Marketing Leader</p>
-                        <p>HG Pharmaceuticals</p>
+                <section class="card">
+                    <section class="card-header">
+                        <section class="card-img">
+                            <img src="./img/kerry.png" alt="" class="left">
+                        </section>
+                        <section class="card-info">
+                            <p><strong>Kerry Bach</strong></p>
+                            <p>Marketing Leader</p>
+                            <p>HG Pharmaceuticals</p>
+                        </section>
                     </section>
-                    <p class="align-justify client-comment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at magna eu nunc vehicula tempor vulputate ut sapien. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum laoreet aliquet
-                        turpis, a eleifend orci fringilla vel. Sed quis dolor ligula. Pellentesque est risus, suscipit vitae ligula a, ultrices sagittis erat. Ut non purus magna. Fusce sed pulvinar diam. Sed at imperdiet velit, at elementum magna. Sed
-                        aliquam neque ipsum, a scelerisque lacus malesuada et.</p>
+                    <section class="card-comment">
+                        <p class="align-justify">
+                            Morbi et pellentesque magna. Sed tempus velit vitae metus tincidunt laoreet. Morbi mollis ligula tellus, at rutrum quam euismod vitae. In non eros sapien. Mauris sem nisl, euismod quis scelerisque et, suscipit at nulla. Pellentesque vitae volutpat lorem.
+                            Nam bibendum facilisis felis a tincidunt. Nam suscipit venenatis ultrices. Cras lacinia nunc et lacus bibendum dictum. Sed ultrices sem in nulla.
+                        </p>
+                    </section>
                 </section>
             </section>
         </section>
