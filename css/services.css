@@ -1,0 +1,66 @@
+
+/* IMPORTS */
+
+/* @import url("global.css"); */
+
+/*------------------------------------------------------------------------*/
+
+
+/* BEGIN: HEADER */
+
+header {
+	background-image: url(../img/banner-services.jpg);
+}
+
+/* END: HEADER */
+
+
+/*------------------------------------------------------------------------*/
+
+/* BEGIN: DISCOVER OFFER */
+
+/* Table */
+
+.tb-services {
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  border-spacing: 0;
+  text-align: left;
+}
+
+/* Padding and border for every cell */
+
+.tb-services thead tr th, .tb-services tbody tr td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--snow);
+}
+
+/* Currency for the last column cells */
+
+.tb-services tbody tr td:last-of-type::before {
+  content: "$";
+  float: left;
+}
+
+.tb-services tbody tr td:last-of-type {
+  text-align: right;
+  clear: both;
+}
+
+/* Bg color and hovering effects */
+
+.tb-services tbody tr:nth-child(even) {
+  background-color: var(--softwhite);
+}
+
+.tb-services tbody tr:nth-child(odd), .tb-services tbody tr:nth-child(even) {
+  transition: background-color 200ms;
+}
+
+.tb-services tbody tr:nth-child(odd):hover, .tb-services tbody tr:nth-child(even):hover {
+  background: rgba(27, 2, 42, .1);
+}
+
+/* END: DISCOVER OFFER */
+
+/*------------------------------------------------------------------------*/
