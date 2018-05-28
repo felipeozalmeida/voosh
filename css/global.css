@@ -7,9 +7,30 @@
 
 /* IMPORTS */
 
-@import url("animate.css");
+@import url("../fonts/font-awesome/css/fontawesome-all.min.css");
 
 /*------------------------------------------------------------------------*/
+
+
+/* ICONS SUBTITLE */
+
+
+/*
+
+WordPress Development
+   wordpress
+Website Development
+   code
+Content Writing
+   pencil-alt
+SEO
+   chart-line
+Website Maintenance
+   server
+Domain Register
+   globe
+
+*/
 
 
 /* FONTS */
@@ -68,7 +89,7 @@ body {
     text-transform: uppercase;
     display: inline-block;
     padding: 1rem 2rem;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
     border: 1px solid var(--purple);
     border-radius: 3px;
     background: var(--white);
@@ -113,12 +134,6 @@ body {
     margin: 0 0 5px 10px;
 }
 
-.center {
-    float: none;
-    display: block;
-    margin: 0 auto;
-}
-
 .align-center {
     text-align: center;
 }
@@ -149,6 +164,10 @@ h6 {
     margin-bottom: 1rem;
 }
 
+p {
+    margin-bottom: 1rem
+}
+
 article>section {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--snow);
@@ -168,7 +187,6 @@ article>section:nth-child(even) {
 /* BEGIN:HEADER */
 
 header {
-    background-image: url(../img/banner.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
