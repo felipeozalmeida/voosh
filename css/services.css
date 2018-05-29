@@ -1,8 +1,3 @@
-
-/* IMPORTS */
-
-/* @import url("global.css"); */
-
 /*------------------------------------------------------------------------*/
 
 
@@ -58,7 +53,7 @@ header {
 }
 
 .tb-services tbody tr:nth-child(odd):hover, .tb-services tbody tr:nth-child(even):hover {
-  background: rgba(27, 2, 42, .1);
+  background: var(--softpurple);
 }
 
 /* END: DISCOVER OFFER */
