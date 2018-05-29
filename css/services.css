@@ -30,6 +30,11 @@ header {
   border-bottom: 1px solid var(--snow);
 }
 
+/* Margin for Font Awesome icons */
+i {
+  margin-right: 1rem;
+}
+
 /* Currency for the last column cells */
 
 .tb-services tbody tr td:last-of-type::before {
