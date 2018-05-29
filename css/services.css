@@ -49,7 +49,7 @@ header {
 }
 
 .tb-services tbody tr:nth-child(odd), .tb-services tbody tr:nth-child(even) {
-  transition: background-color 200ms;
+  transition: background-color 130ms linear;
 }
 
 .tb-services tbody tr:nth-child(odd):hover, .tb-services tbody tr:nth-child(even):hover {
