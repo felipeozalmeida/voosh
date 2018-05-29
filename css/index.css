@@ -20,9 +20,14 @@ header {
     padding: 1rem 0;
     vertical-align: top;
     width: 200px;
+    transition: transform 130ms linear;
 }
 
-.technologies img {
+.technologies li:hover {
+    transform: scale(1.1);
+}
+
+.technologies li img {
     display: block;
     margin: 0 auto 1rem;
     width: 125px;
