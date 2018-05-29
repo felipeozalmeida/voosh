@@ -53,7 +53,7 @@ header {
 }
 
 .tb-services tbody tr:nth-child(odd):hover, .tb-services tbody tr:nth-child(even):hover {
-  background: var(--softpurple);
+  background: var(--tr-hover);
 }
 
 /* END: DISCOVER OFFER */

@@ -55,8 +55,9 @@ Domain Register
     --snow: #CDCDCD;
     --blue: #00ACCD;
     --softwhite: #F4F4F4;
-    --softpurple: rgba(27, 2, 42, .1);
-    --softblack: rgba(0, 0, 0, 0.6);
+    --tr-hover: rgba(27, 2, 42, .1);
+    --overlay-header: rgba(0, 0, 0, 0.6);
+    --overlay-project: rgba(16, 0, 25, 0.5);
 }
 
 
@@ -200,7 +201,7 @@ header::before {
     z-index: 1;
     position: absolute;
     top: 0;
-    background-color: var(--softblack);
+    background-color: var(--overlay-header);
     content: "";
     display: block;
 }
