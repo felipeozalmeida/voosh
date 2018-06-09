@@ -55,7 +55,7 @@ Domain Register
     --snow: #CDCDCD;
     --blue: #00ACCD;
     --softwhite: #F4F4F4;
-    --tr-hover: rgba(27, 2, 42, .1);
+    --tr-hover: rgba(27, 2, 42, .3);
     --overlay-header: rgba(0, 0, 0, 0.6);
     --overlay-project: rgba(16, 0, 25, 0.5);
 }
