@@ -11,28 +11,6 @@
 
 /*------------------------------------------------------------------------*/
 
-
-/* ICONS SUBTITLE */
-
-
-/*
-
-WordPress Development
-   wordpress
-Website Development
-   code
-Content Writing
-   pencil-alt
-SEO
-   chart-line
-Website Maintenance
-   server
-Domain Register
-   globe
-
-*/
-
-
 /* FONTS */
 
 @font-face {
@@ -53,11 +31,13 @@ Domain Register
     --white: #FFFFFF;
     --black: #000000;
     --snow: #CDCDCD;
+    --softbrown: #878787;
+    --gray: #495057;
     --blue: #00ACCD;
     --softwhite: #F4F4F4;
-    --tr-hover: rgba(27, 2, 42, .3);
+    --purple-effect: rgba(27, 2, 42, .3);
     --overlay-header: rgba(0, 0, 0, 0.6);
-    --overlay-project: rgba(16, 0, 25, 0.5);
+    --overlay-project: rgba(16, 0, 25, 0.9);
 }
 
 
@@ -170,12 +150,12 @@ p {
     margin-bottom: 1rem
 }
 
-article > section {
+article>section {
     padding: 1.5rem 0;
     border-bottom: 1px solid var(--snow);
 }
 
-article > section:nth-child(even) {
+article>section:nth-child(even) {
     background: var(--softwhite);
 }
 
@@ -242,11 +222,9 @@ header::before {
 
 /* BEGIN:NAVBAR */
 
-
 .container-nav {
     margin: 0 10rem;
 }
-
 
 .navbar {
     color: var(--white);

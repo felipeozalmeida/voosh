@@ -48,8 +48,14 @@ header {
     width: 100%;
 }
 
+.project .overlay-project .overlay-content i {
+    display: block;
+    margin: 0 auto 1rem;
+}
+
 .project .overlay-project .overlay-content p {
     font-size: .85rem;
+    margin: 0;
 }
 
 .project .overlay-project .overlay-content img {

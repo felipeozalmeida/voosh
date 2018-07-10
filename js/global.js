@@ -3,10 +3,9 @@
 window.onscroll = function() {
     menuSticky()
 };
-var navbar = document.querySelector("nav");
-var sticky = navbar.offsetTop;
 
 function menuSticky() {
+    var navbar = document.querySelector("nav");
     if (window.pageYOffset >= 0.5) {
         navbar.classList.add("scrolling");
     } else {

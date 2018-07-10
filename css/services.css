@@ -58,7 +58,7 @@ i {
 }
 
 .tb-services tbody tr:nth-child(odd):hover, .tb-services tbody tr:nth-child(even):hover {
-  background: var(--tr-hover);
+  background: var(--purple-effect);
 }
 
 /* END: DISCOVER OFFER */
