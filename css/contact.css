@@ -1,0 +1,56 @@
+/* JUMBOTRON */
+
+header {
+    background-image: url(../img/banner-contact.jpg);
+    background-position: center top;
+}
+
+
+/* CONTACT */
+
+::placeholder {
+    color: var(--black);
+}
+
+.area {
+    width: 100%;
+    background-color: var(--white);
+    padding: 2%;
+}
+
+.form-group {
+    margin: 0 auto;
+}
+
+.form-input {
+    display: block;
+    width: 50%;
+    padding: 1rem;
+    margin: 1% auto;
+    border-radius: .25rem;
+    border: .5px solid var(--softbrown);
+    line-height: 1.5;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-input:focus {
+    color: var(--gray);
+    background-color: var(--white);
+    border-color: var(--purple);
+    outline: 0;
+    box-shadow: -1px 0px 0px 0.2rem var(--purple-effect);
+}
+
+.form-select {
+    display: block;
+    width: 50%;
+    margin: 1% auto;
+    padding: 1rem;
+    border-radius: .25rem;
+    border: .5px solid var(--softbrown);
+    line-height: 1.5;
+}
+
+.txaMessage {
+    resize: none;
+}
